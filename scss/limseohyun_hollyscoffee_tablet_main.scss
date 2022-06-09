@@ -1,0 +1,218 @@
+html{
+    font-size: 3vw;
+}
+body{
+    font-size: 0.7vw;
+    /* height: 700vw; */
+}
+
+$cnt01 : #{'min(6rem,240px)'};
+$cnt02 : #{'min(3em,30px)'};
+$cnt03 : #{'min(7rem,280px)'};
+$cnt04 : #{'min(3rem,120px)'};
+$bnr01 : #{'min(9rem,360px)'};
+$bnr02 : #{'min(2em,20px)'};
+$bnr03 : #{'min(1.8em,18px)'};
+$bnr04 : #{'min(1rem,40px)'};
+
+// // 헤더
+// .hdrWrap{
+//     header{
+//         // width: 90%;
+//         max-width: 700px;
+//     }
+// }
+
+// 메인
+.mainWrap{
+    main{
+        margin-top: 40px;
+        width: 90%;
+        max-width: 700px;  
+        margin: auto;
+        margin-left: 400px;
+        .imageView{
+            .ovrGrid{} 
+            .imageGroup{
+                .image{
+                    
+                    margin: auto;
+                    top: -500px;
+                    right: -600px;
+                }
+            }
+        }
+        .image2View{
+            display: none;
+            .ovrGrid{}
+            .image2Group{
+                .image{}
+            }
+        }
+        .textView{
+            h2{
+                text-align: center;
+                margin: auto;
+                left: -700px;
+                top: 100px;
+            }
+        }
+        .btn{
+            display: none;
+        }
+    }
+}
+
+// 컨텐츠1
+.cntWrap01{
+    margin-top: -100px;
+    .content.cnt01{
+        width: 90%;
+        max-width: 700px;
+        header{
+            h2{}
+        }
+        section{
+            article{
+                width: calc(100% / 2 - 20px);
+                display: block;
+                .image{
+                    height: $cnt03;
+                    flex-wrap: wrap;
+                }
+                .texts{
+                    height: $cnt04;
+                    padding: 30px 0px;
+                    h3{}
+                    h4{}
+                }
+            }
+        }
+    }
+}
+
+// 배너
+.bnrWrap{
+    .banner{
+        height: $bnr01;
+        padding: 20px 0px;
+        width: 100%;
+        // max-width: 700px;
+        h2{
+            font-size: $cnt02;
+            &::after{
+                width: 250px;
+            }
+        }
+        h5{
+            font-size: $bnr02;
+            margin: 30px;
+        }
+        .btn{
+            font-size: $bnr03;
+            line-height: $bnr04;
+        }
+    }
+}
+
+// 컨텐츠2
+.cntWrap02{
+    .content.cnt02{
+        width: 90%;
+        max-width: 700px;
+    }
+}
+
+// 컨텐츠3
+.cntWrap03{
+    .content.cnt03{
+        // width: 90%;
+        // max-width: 700px;
+        header{
+            h2{}
+        }
+        section{
+            article{
+                .images{
+                    .image.i1{
+                        display: none;
+                    }
+                    .image.i2{
+                        right: -50px;
+                    }
+                    .image.i3{
+                        display: none;
+                    }
+                    .image.i4{
+                       margin-left: 230px;
+                       z-index: 10;
+                    }
+                    .image.i5{
+                        display: none;
+                    }
+                    .image.i6{}
+                }
+                .texts{
+                    .ovrGrid{}
+                    .txt{
+                        h5{}
+                        h3{}
+                        p{}
+                    }
+                }
+                &:nth-child(1){
+                    .texts{
+                        .ovrGrid{
+                           left: -150px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .texts{
+                        .ovrGrid{
+                            left: -170px;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .texts{
+                        .ovrGrid{
+                            left: -150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 푸터
+.ftrWrap{
+    margin-top: 40px;
+    footer{
+        width: 90%;
+        max-width: 700px;
+        .ftrLeft{
+            h1{
+                background-image: url('../image/hollyscoffeelogo2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // line-height: 1000px;
+                color: #fff;
+                font-size: 100px;
+                width: 600%
+                
+            }
+            h4{
+                display: none;
+            }
+        }
+        .ftrRight{
+            nav{}
+            .sns{}
+            .contact{
+                display: none;
+            }
+        }
+    }
+}

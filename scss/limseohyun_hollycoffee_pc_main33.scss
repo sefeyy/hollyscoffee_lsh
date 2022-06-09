@@ -1,0 +1,581 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Ibmp';
+    src: url('../fonts/IBMPlexSansKR-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Robo';
+    src: url('../fonts/RobotoSlab-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Yanon';
+    src: url('../fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
+  }
+
+html{
+    font-size: 3vw;
+}
+body{
+    font-size: 0.7vw;
+    /* height: 700vw; */
+}
+
+$hdr01 : #{'min(2em,20px)'};
+$mi01 : #{'min(17rem,640px)'};
+$mi02 : #{'min(8rem,320px)'};
+$cnt01 : #{'min(1.8em,18px)'};
+$cnt02 : #{'min(2.5em,25px)'};
+$cnt03 : #{'min(11rem,440px)'};
+$cnt04 : #{'min(1rem,40px)'};
+$cnt05 : #{'min(0.1rem,4px)'};
+$cnt06 : #{'min(4rem,160px)'};
+$bnr01 : #{'min(14rem,560px)'};
+$bnr02 : #{'min(5em,50px)'};
+$bnr03 : #{'min(2rem,80px)'};
+$bnr04 : #{'min(6rem,240px)'};
+$cnt07 : #{'min(3em,30px)'};
+$cnt08 : #{'min(7.5rem,300px)'};
+$cnt09 : #{'min(0.1rem,4px)'};
+$cnt10 : #{'min(7rem,280px)'};
+$cnt11 : #{'min(9rem,360px)'};
+$cnt12 : #{'min(16rem,640px)'};
+
+// 헤더
+.hdrWrap{
+    padding: 40px 0px;
+    header{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        line-height: 60px;
+        font-family: 'Robo';
+        h1{
+            width: calc(100% / 12 * 5);
+            background-image: url('../image/hollyscoffeelogo1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            a{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        nav{
+            width: calc(100% / 12 * 6);
+            justify-content: space-between;
+            display: flex;
+            h4{
+                font-size: $hdr01;
+                text-transform: uppercase;;
+            }
+        }
+    }
+}
+// 메인
+.mainWrap{
+    main{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        position: relative;
+        .imageView{
+            width: calc(100% / 12 * 5 - 20px);
+            direction: rtl;
+            position: relative;
+            width: 100%;
+            // overflow: hidden;
+            .ovrGrid{
+                // background-color: orange;
+                height: $mi01;
+                min-width: calc(100vw - 80vw / 2 + 100%);
+                width: calc(100vw - 1080px / 2 + 100%);
+                .artGroup{
+                    width: 500%;
+                    // justify-content: space-between;
+                    // display: flex;
+                    .artGroup::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
+                    li{
+                        width: calc(100% / 5);
+                        height: $cnt12;
+                        float: left;
+                        background-image: url(../image/hollysmain/main/img1.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        // &:nth-child(1){
+                        //     background-color: darkgray;
+                        // }
+                        // &:nth-child(2){
+                        //     background-color: darkgreen;
+                        // }
+                        // &:nth-child(3){
+                        //     background-color: darkolivegreen;
+                        // }
+                        // &:nth-child(4){
+                        //     background-color: darkorange;
+                        // }
+                        // &:nth-child(5){
+                        //     background-color: darkmagenta;
+                        // }
+                    }
+                }
+            }
+        }
+        .image2View{
+            width: calc(100% / 12 * 7 - 20px);
+            position: absolute;
+            top: 400px;
+            .ovrGrid{
+                background-color: gray;
+                height: $mi02;
+                min-width: calc(100vw - 80vw / 2 + 100%);
+                width: calc(100vw - 1080px / 2 + 100%);
+                overflow: hidden;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url('../image/hollysmain/main/sub1.jpg');
+            }
+            .image2Group{
+                .image{
+                }
+        }
+        }
+        .textView{
+            h2{
+                font-size: 72px;
+                font-weight: 700;
+                text-transform: uppercase;
+                right:0;
+                top: 80px;
+                position: absolute;
+                right: -210px;
+                font-family: 'Anton';
+            }
+        }
+    }
+}
+// 컨텐츠1
+.cntWrap:nth-child(3){
+    margin-top: 250px;
+
+    .content.cnt01{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        header{
+            h2{
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: capitalize;
+                text-align: center;
+                font-family: 'Robo';
+            }
+        }
+        section{
+            margin-top: 80px;
+            justify-content: space-between;
+            display: flex;
+            article{
+                width: calc(100% / 4 - 20px);
+                position: relative;
+                .image{
+                    background-color: pink;
+                    height: $cnt03;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &.image.i1{
+                        background-image: url('../image/hollysmain/content1/img1.jpg');
+                    }
+                    &.image.i2{
+                        background-image: url('../image/hollysmain/content1/img2.jpg');
+                    }
+                    &.image.i3{
+                        background-image: url('../image/hollysmain/content1/img3.jpg');
+                    }
+                    &.image.i4{
+                        background-image: url('../image/hollysmain/content1/img4.jpg');
+                    }
+                }
+                .texts{
+                    position: absolute;
+                    padding: 40px 0px;
+                    margin-top: -300px;
+                    padding: 40px 40px;
+                    background-color: #ccc;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 70%;
+                    font-family: 'Ibmp';
+                    h3{
+                        font-size: $hdr01;
+                        font-weight: 700;
+                        text-align: center;
+                        &::after{
+                            width: 35px;
+                            height: $cnt05;
+                            background-color: #000;
+                            content: '';
+                            display: block;
+                            line-height: $cnt04;
+                            margin: auto;
+                        }
+                    }
+                    h4{
+                        font-size: $cnt01;
+                        font-weight: 700;
+                        line-height: $cnt04;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+// 배너
+.bnrWrap{
+    margin-top: 120px;
+    .banner{
+        // height: $bnr01;
+        background-color: pink;
+        padding: 120px;
+        text-align: center;
+        background-image: url('../image/hollysmain/banner/bnr.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2{
+            font-size: $bnr02;
+            line-height: $bnr03;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-family: 'Yanon';
+            &::after{
+                width: 350px;
+                height: $cnt05;
+                background-color: #000;
+                content: '';
+                display: block;
+                margin: auto;
+            }
+        }
+        h5{
+            font-size: $cnt02;
+            margin-top: 40px;
+            line-height: $cnt04;
+            font-family: 'Ibmp';
+        }
+        .btn{
+            width: calc(100% / 12 * 2);
+            line-height: $bnr03;
+            font-weight: 700;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid #000;
+            margin: auto;
+            margin-top: 40px;
+            font-family: 'Ibmp';
+        }
+    }
+}
+// 컨텐츠2
+.cntWrap02{
+    margin-top: 120px;
+    .content.cnt02{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        header{
+            h2{
+                font-size: $cnt02;
+                text-transform: capitalize;
+                font-weight: 700;
+                text-align: center;
+                font-family: 'Robo';
+
+            }
+        }
+        section{
+            margin-top: 80px;
+            justify-content: space-between;
+            display: flex;
+            article{
+                width: calc(100% / 4 - 20px);
+                .image{
+                    width: 100%;
+                    background-color: #f0d393;
+                    height: $bnr04;
+                    border-radius: 60%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &.image.i1{
+                        background-image: url('../image/hollysmain/content2/img1.png');
+                    }
+                    &.image.i2{
+                        background-image: url('../image/hollysmain/content2/img2.png');
+                    }
+                    &.image.i3{
+                        background-image: url('../image/hollysmain/content2/img3.png');
+                    }
+                    &.image.i4{
+                        background-image: url('../image/hollysmain/content2/img4.png');
+                    }
+                }
+                .texts{
+                    font-size: $hdr01;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: $bnr03;
+                    font-family: 'Ibmp';
+                }
+            }
+        }
+    }
+}
+// 컨텐츠3
+.cntWrap03{
+    margin-top: 120px;
+    .content.cnt03{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        header{
+            h2{
+                font-size: $cnt02;
+                text-transform: capitalize;
+                font-weight: 700;
+                text-align: center;
+                font-family: 'Robo';
+            }
+        }
+        section{
+            margin-top: 80px;
+            article{
+                height: $cnt11;
+                position: relative;
+                &:nth-child(2){
+                    .images{
+                        left: -90px;
+                    }
+                    .texts{
+                        right: -180px;
+                    }
+                    .ovrGrid{
+                        right: -200px;
+                        margin-left: calc((100vw - 1080px) / -2);
+                    }
+                }
+                .images{
+                    width: calc(100% / 12 * 6);
+                    height: $cnt10;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    // background-color: pink;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    z-index: 5;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    .image.i1{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img01.jpg');
+                    }
+                    .image.i2{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img02.jpg');
+                    }
+                    .image.i3{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img03.jpg');
+                    }
+                    .image.i4{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img04.jpg');
+                    }
+                    .image.i5{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img05.jpg');
+                    }
+                    .image.i6{
+                        background-color: pink;
+                        height: $cnt10;
+                        width: calc(100% / 2 - 20px);
+                        background-image: url('../image/hollysmain/content3/img06.jpg');
+                    }
+                }
+                .texts{
+                    width: calc(100% / 12 * 8);
+                    height: $cnt10;
+                    position: absolute;
+                    top: #{'min(2rem,80px)'};
+                    &:nth-child(2){
+                        flex-direction: column-reverse;
+                       flex-wrap: wrap;
+                        display: flex;
+                    }
+                    .txt{
+                        position: absolute;
+                        right: calc(100% / 8 * 2);
+                        top: 0;
+                        padding: 30px 0px;
+                        h5{
+                        font-size: $hdr01;
+                        font-weight: 700;
+                        color: #a02b2b;
+                        font-family: 'Robo';
+                        &::after{
+                                content: '';
+                                display: block;
+                                width: 30px;
+                                height: $cnt05;
+                                background-color: #a02b2b;
+                        }
+                    }
+                    h3{
+                        font-size: $cnt07;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        line-height: $bnr03;
+                        font-family: 'Yanon';
+                    }
+                    p{
+                        font-size: $hdr01;
+                        font-family: 'Ibmp';
+                    }
+                }
+                .ovrGrid{
+                    min-width: calc((100vw - 80vw) / 2 + 100%);
+                    width: calc((100vw - 1080px) / 2 + 100%);
+                    height: $cnt10;
+                    background-color: #e6aa95;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            &:nth-child(2){
+                .texts{
+                    .txt{
+                        h5{
+                            color: #c89b39;
+                            &::after{
+                                background-color: #c89b39;
+                            }
+                        }
+                    }
+                    .ovrGrid{
+                        background-color: #f0d393;
+                        margin-left: calc((100vw - 1080px) / -2);
+                    }
+                }
+            }
+            &:nth-child(1){
+                .texts{
+                    .ovrGrid{
+                        margin-left: calc((100vw - 1080px) / -2);
+                    }
+                }
+            }
+            &:nth-child(3){
+                .texts{
+                    .ovrGrid{
+                        margin-left: calc((100vw - 1080px) / -2);
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+// 푸터
+.ftrWrap{
+    margin-top: 80px;
+    footer{
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        padding: 80px 0px;
+        .ftrLeft{
+            h1{
+                background-image: url('../image/hollyscoffeelogo2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 150px;
+                width: calc(100% / 6 * 1.5);
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            h4{
+                margin-top: 100px;
+                color: gray;
+                font-size: $cnt01;
+                font-family: 'Ibmp';
+            }
+        }
+        .ftrRight{
+            nav{
+                justify-content: space-between;
+                display: flex;
+                h4{
+                    margin-left: 50px;
+                    font-size: $hdr01;
+                    text-transform: capitalize;
+                    line-height: $bnr03;
+                    font-weight: 700;
+                    font-family: 'Robo';
+                }
+            }
+            .sns{
+                text-align: right;
+                font-size: $cnt07;
+            }
+            .contact{
+                width: calc(100% / 6 * 5);
+                text-align: right;
+                font-size: $hdr01;
+                background-color: #af3939;
+                text-align: center;
+                border-radius: 30px;
+                color: #fff;
+                line-height: $cnt04;
+                margin-left: 60px;
+                margin-top: 40px;
+                font-family: 'Ibmp';
+            }
+        }
+    }
+}

@@ -1,0 +1,319 @@
+
+html{
+    font-size: 3vw;
+}
+body{
+    font-size: 0.7vw;
+    /* height: 700vw; */
+}
+
+$hdr01 : #{'min(1.6em,16px)'};
+$hdr02 : #{'min(1rem,40px)'};
+$hdr03 : #{'min(5rem,200px)'};
+$cnt01 : #{'min(2em,20px)'};
+$bnr01 : #{'min(7rem,280px)'};
+$bnr02 : #{'min(2.5em,25px)'};
+$bnr03 : #{'min(1.4em,14px)'};
+$cnt02 : #{'min(7.5em,75px)'};
+
+// 헤더
+.hdrWrap{
+    header{
+        display: block;
+        // width: 200%;        
+        h1{
+            width: calc(100% / 4 * 2.5);
+            background-image: url('../image/hollyscoffeelogo1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            height: $cnt02;
+            margin: auto;
+            line-height: $hdr02;
+            margin-bottom: 20px;
+        }
+        nav{
+            // width: calc(100% / 4);
+            font-size: $hdr01;
+            font-weight: 700;
+            line-height: $hdr02;
+            margin: auto;
+        }
+    }
+}
+
+// 컨텐츠 공통
+.cntWrap{
+    margin-top: 40px;
+    .content{
+        header{
+            // width: 200%;
+            h2{
+                font-size: $cnt01;
+                margin: 40px 0px;
+            }
+        }
+        section{}
+    }
+}
+
+// 컨텐츠1
+.cntWrap{
+    .content.cnt01{
+        header{}
+        section{
+            article{
+                .image{
+                    width: 50%;
+                    .ovrGrid{
+                        width: 50%;
+                        height: $hdr03;
+                    }
+                }
+                .texts{
+                    z-index: 5;
+                    h5{}
+                    h3{}
+                    p{
+                        display: none;
+                    }
+                }
+                &:nth-child(1){
+                    .image{
+                        margin-left: 60px;
+                        .ovrGrid{
+                            width: calc(100% / 4 * 2 - 20px);
+                        }
+                    }
+                    .texts{
+                        margin-top: 5px;
+                        margin-right: 50px;
+                    }
+                }
+                &:nth-child(2){
+                    .image{
+                        width: calc(100% / 4 * 3 - 20px);
+                        .ovrGrid{
+                            margin-left: 90px;
+                            // margin-top: 40px;
+                            right: 0;
+                        }
+                    }
+                    .texts{
+                        margin-left: 50px;
+                        margin-top: -25px;
+                    }
+                }
+                &:nth-child(3){
+                    .image{
+                        width: calc(100% / 4 * 3 - 20px);
+                        .ovrGrid{
+                            // margin-top: 80px;
+                            margin-left: -50px;
+                        }
+                    }
+                    .texts{
+                        // margin-right: -200px;
+                        // margin-top: 130px;
+                        margin-right: 25px;
+                        margin-top: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+// 컨텐츠2
+.cntWrap:nth-child(3){
+    margin-top: -100px;
+}
+    .content.cnt02{
+        header{}
+        section{
+            // flex-wrap: wrap;
+            // display: flex;
+            margin: auto;
+            .artTop{
+                width: 100%;
+                article{
+                    width: calc(100% / 2 - 20px);
+                    flex-wrap: wrap;
+                    // width: 50%;
+                    margin: auto;
+                    &:nth-child(3){
+                        display: none;
+                    }
+                    &:nth-child(4){
+                        display: none;
+                    }
+                    // &:nth-child(2){
+                    //     margin-right: 200px;
+                    // }
+                    .image{
+                        &.image.i3{
+                            display: none;
+                        }
+                    }
+                    .texts{
+                        h3{}
+                    }
+                    &:nth-child(3){
+                        .texts{
+                            h3{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .artBtm{
+                width: 100%;
+                article{
+                    width: calc(100% / 2 - 20px);
+                    margin: auto;
+                    &:nth-child(3){
+                        display: none;
+                    }
+                    &:nth-child(4){
+                        display: none;
+                    }
+                    // &:nth-child(2){
+                    //     margin-right: 200px;
+                    // }
+                    .image{
+                        &.image.i7{
+                            display: none;
+                        }
+                    }
+                    .texts{
+                        h3{}
+                    }
+                    &:nth-child(3){
+                        .texts{
+                            h3{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// 배너
+.bnrWrap{
+    margin-top: 40px;
+    .banner{
+        height: $bnr01;
+        h3{
+            font-size: $bnr02;
+            &::after{
+                width: 80px;
+            }
+        }
+        h5{
+            display: none;
+        }
+        .btn{
+            font-size: $bnr03;
+            width: calc(100% / 4);
+            line-height: $hdr02;
+        }
+    }
+}
+// 컨텐츠3
+.cntWrap{
+    .content.cnt03{
+        header{}
+        section{
+            margin-top: 40px;
+            article{
+                .texts{
+                    z-index: 5;
+                    h5{}
+                    h3{}
+                    p{
+                        display: none;
+                    }
+                }
+                &:nth-child(1){
+                    .image{
+                        .ovrGrid{
+                            // margin-left: 60px;
+                        }
+                    }
+                    .texts{
+                        margin-top: 0px;
+                        margin-left: 80px;
+                    }
+                }
+                &:nth-child(2){
+                    .image{
+                        margin-left: 50px;
+                        .ovrGrid{
+                            // margin-top: 50px;
+                        }
+                    }
+                    .texts{
+                        margin-top: -30px;
+                        margin-right: 40px;
+                        
+                    }
+                }
+                &:nth-child(3){
+                    .image{
+                        .ovrGrid{
+                            // margin-left: 215px;
+                            // margin-top: 100px;
+                        }
+                    }
+                    .texts{
+                        margin-top: 20px;
+                        margin-left: 80px;
+                    }
+                }
+
+                .image{
+                    // width: 50%;
+                    .ovrGrid{
+                        // width: 335%;
+                        height: $hdr03;
+                    }
+                }
+            }
+        }
+    }
+}
+// 푸터
+.ftrWrap{
+    // margin-top: 60px;
+    footer{
+        display: block;
+        // width: 200%;   
+        padding: 40px 0px; 
+        .ftrLeft{
+            h1{
+                text-align: center;
+            // width: 100%;
+            line-height: $cnt01;
+            width: 40%;
+            // height: 50px;
+            margin: auto;
+            }
+            h4{}
+        }
+        .ftrRight{
+            nav{
+                display: none;
+            }
+            .sns{
+                // width: 100%;
+                text-align: center;
+                font-size: $cnt01;
+            }
+            .contact{}
+        }
+    }
+}
